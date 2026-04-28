@@ -1,10 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-const yearSelect = document.getElementById("year");
-const currentYear = new Date().getFullYear();
-for (let y = currentYear; y >=1900; y--){
-    yearSelect.innerHTML += `<option value="${y}">${y}</option>`;
-}
-
 document.querySelector("#formAkan") .addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -15,14 +8,21 @@ let year = Number(document.getElementById("year").value);
 let result = document.getElementById("result");
 
 
-if (day < 1 || day > 31 ) {
+if (!day || day < 1 || day > 31 ) {
     alert("Invalid day");
     return;
 }
 
-if (month < 1 || month >12 ) {
+if (!month || month < 1 || month >12 ) {
     alert("Invalid month");
     return;
+}
+
+const currentYear = new Date().getFullYear();
+
+if (!year || year < 1900 || year > currentYear) {
+  alert("Invalid year");
+  return;
 }
 
 if (!gender) {
@@ -63,6 +63,5 @@ result.textContent = "You were born on " + dayName + " - Your Akan Name is " +ak
 
 });
 
-});
 
 

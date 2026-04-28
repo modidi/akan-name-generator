@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1c1414;
+    background-color: #656060;
 }
 
 header {
@@ -118,7 +118,7 @@ nav a {
         font-weight: 600;
     }
     
-    form input, form textarea, form button, form select {
+    form input, form textarea, form button {
     width: 100%;
     padding: 14px;
     margin-bottom: 16px;
@@ -127,7 +127,7 @@ nav a {
     border-radius: 8px;
     }
     
-    form input:focus, form textarea:focus, form select:focus {
+    form input:focus, form textarea:focus {
     border-color: #97a99d;
     outline: none;
     }
