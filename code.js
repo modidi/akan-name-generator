@@ -8,21 +8,19 @@ for (let y = currentYear; y >=1900; y--){
 document.querySelector("#formAkan") .addEventListener("submit", (event) => {
     event.preventDefault();
 
-let day = parseInt(document.getElementById("day").value);
-let month = parseInt(document.getElementById("month").value);
+let day = Number(document.getElementById("day").value);
+let month = Number(document.getElementById("month").value);
 let gender = (document.getElementById("gender").value);
-
-
-
+let year = Number(document.getElementById("year").value);
 let result = document.getElementById("result");
 
 
-if (day < 1 || day > 31 ) {
+if (! day || day < 1 || day > 31 ) {
     alert("Invalid day");
     return;
 }
 
-if (month < 1 || month >12 ) {
+if (!month || month < 1 || month >12 ) {
     alert("Invalid month");
     return;
 }
@@ -63,5 +61,6 @@ let akanName;
 result.textContent = "You were born on " + dayName + " - Your Akan Name is " +akanName;
 });
 
+});
 
 
