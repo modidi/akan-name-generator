@@ -59,6 +59,8 @@ let akanName;
  let dayName = days[dayofWeek];
 
 result.textContent = "You were born on " + dayName + " - Your Akan Name is " +akanName;
+
+
 });
 
 });
