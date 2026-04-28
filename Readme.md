@@ -1,4 +1,4 @@
-#AKAN NAME GENERATOR
+# AKAN NAME GENERATOR
 
 ## Description
 Akan Name Generator is a web application that calculates your Akan Name based on your date of birth, your month and the year. Akan namese are used in the Ghananian culture, where children are traditionally given their name based on the day of the week they were born.
@@ -7,8 +7,8 @@ Akan Name Generator is a web application that calculates your Akan Name based on
 Maureen Mutua
 
 ## Project Setup
-- Clone this repository
-- Open `index.html` in your web browser
+-Clone this repository
+-Open `index.html` in your web browser
 - Enter your Date, Month, Year and select your gender
 - Click submit to see your Akan name
 - View the live project here:
