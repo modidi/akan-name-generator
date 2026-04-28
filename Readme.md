@@ -7,9 +7,14 @@ Akan Name Generator is a web application that calculates your Akan Name based on
 Maureen Mutua
 
 ## Project Setup
+- Clone this repository
+- Open `index.html` in your web browser
+- Enter your Date, Month, Year and select your gender
+- Click submit to see your Akan name
+- View the live project here:
 
 ## BDD (Behaviour Driven Development)
-**Input:** Day, Month, Year and Gender
+**Input:** Date, Month, Year and Gender
 **Output:** Akan Name based on day of birth and gender
 
 **Input:** Invalid date (day <1 or day >31 )
