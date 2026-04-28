@@ -11,7 +11,7 @@ Maureen Mutua
 - Open `index.html` in your web browser
 - Enter your Date, Month, Year and select your gender
 - Click submit to see your Akan name
-- View the live project here:
+- View the live project here:https://modidi.github.io/akan-name-generator/
 
 ## BDD (Behaviour Driven Development)
 **Input:** Date, Month, Year and Gender
