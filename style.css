@@ -97,6 +97,12 @@ nav a {
         border-radius: 12px;
         box-shadow: 0 6px 15px (0,0,0,0.1);
     }
+
+    .form-cont p {
+        text-align: center;
+        font-weight:600;
+        color: #140f64;
+    }
     
     form {
         max-width: 600px;
