@@ -15,12 +15,12 @@ let year = Number(document.getElementById("year").value);
 let result = document.getElementById("result");
 
 
-if (! day || day < 1 || day > 31 ) {
+if (day < 1 || day > 31 ) {
     alert("Invalid day");
     return;
 }
 
-if (!month || month < 1 || month >12 ) {
+if (month < 1 || month >12 ) {
     alert("Invalid month");
     return;
 }
