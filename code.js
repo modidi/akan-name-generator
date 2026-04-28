@@ -4,7 +4,7 @@ document.getElementById("formAkan"). addEventListener("submit", function(e) {
 let day = parseInt(document.getElementById("day").value);
 let month = parseInt(document.getElementById("month").value);
 let year = parseInt(document.getElementById("year").value);
-let gender = parseInt(document.getElementById("result").value);
+let gender = parseInt(document.getElementById("gender").value);
 
 let result = document.getElementById("result");
 
@@ -20,6 +20,7 @@ if (month < 1 || month >12 ) {
 
 if (!gender) {
     alert("Please select gender");
+    return;
 }
 
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
