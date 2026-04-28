@@ -1,7 +1,7 @@
 # AKAN NAME GENERATOR
 
 ## Description
-Akan Name Generator is a web application that calculates your Akan Name based on your date of birth, your month and the year. Akan namese are used in the Ghananian culture, where children are traditionally given their name based on the day of the week they were born.
+Akan Name Generator is a web application that calculates your Akan Name based on your date of birth, your month and the year. Akan names are used in the Ghananian culture, where children are traditionally given their name based on the day of the week they were born.
 
 ## Author
 Maureen Mutua
