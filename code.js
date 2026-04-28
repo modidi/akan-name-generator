@@ -1,11 +1,18 @@
-// 
-document.querySelector(#formAkan) .addEventListener("click", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
+const yearSelect = document.getElementById("year");
+const currentYear = new Date().getFullYear();
+for (let y = currentYear; y >=1900; y--){
+    yearSelect.innerHTML += `<option value="${y}">${y}</option>`;
+}
+
+document.querySelector("#formAkan") .addEventListener("submit", (event) => {
     event.preventDefault();
 
 let day = parseInt(document.getElementById("day").value);
 let month = parseInt(document.getElementById("month").value);
-let year = parseInt(document.getElementById("year").value);
 let gender = (document.getElementById("gender").value);
+
+
 
 let result = document.getElementById("result");
 
@@ -43,22 +50,18 @@ if (dayofWeek < 0) {
     dayofWeek = (dayofWeek + 7) % 7;
 }
 
-let akanName = (gender === "male")
+let akanName;
 
-? maleNames[dayofWeek]
-: femaleNames[dayofWeek];
+ if (gender === "male") {
+    akanName = maleNames[dayofWeek];
+ } else {
+    akanName = femaleNames[dayofWeek];
+ }
 
-let dayName = days[dayofWeek];
+ let dayName = days[dayofWeek];
 
-// if (gender === "male") {
-//     akanName = maleNames[dayofWeek];
-// } else {
-//     akanName = femaleNames[dayofWeek];
-// }
-
-result.textContent = `You were born on ${dayName} - Your Akan Name is ${akanName}`
+result.textContent = "You were born on " + dayName + " - Your Akan Name is " +akanName;
 });
-
 
 
 
