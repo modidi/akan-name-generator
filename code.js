@@ -1,5 +1,6 @@
-document.getElementById("formAkan"). addEventListener("submit", function(e) {
-    e.preventDefault();
+// 
+document.querySelector(#formAkan) .addEventListener("click", (event) => {
+    event.preventDefault();
 
 let day = parseInt(document.getElementById("day").value);
 let month = parseInt(document.getElementById("month").value);
@@ -8,7 +9,6 @@ let gender = (document.getElementById("gender").value);
 
 let result = document.getElementById("result");
 
-console.log("Gender value:", gender);
 
 if (day < 1 || day > 31 ) {
     alert("Invalid day");
@@ -45,7 +45,7 @@ if (dayofWeek < 0) {
 
 let akanName = (gender === "male")
 
-? maleNames[dayofweek]
+? maleNames[dayofWeek]
 : femaleNames[dayofWeek];
 
 let dayName = days[dayofWeek];
@@ -56,7 +56,7 @@ let dayName = days[dayofWeek];
 //     akanName = femaleNames[dayofWeek];
 // }
 
-result.textContent = 'You were born on ${dayName} - Your Akan Name is ${akanName}'
+result.textContent = `You were born on ${dayName} - Your Akan Name is ${akanName}`
 });
 
 
