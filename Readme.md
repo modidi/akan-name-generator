@@ -7,8 +7,8 @@ Akan Name Generator is a web application that calculates your Akan Name based on
 Maureen Mutua
 
 ## Project Setup
--Clone this repository
--Open `index.html` in your web browser
+- Clone this repository
+- Open `index.html` in your web browser
 - Enter your Date, Month, Year and select your gender
 - Click submit to see your Akan name
 - View the live project here:
@@ -24,12 +24,12 @@ Maureen Mutua
 **Output:** Error message requesting valid month
 
 ## Technologies used 
--HTML
--CSS
--JAVASCRIPT
+- HTML
+- CSS
+- JAVASCRIPT
 
 ## Contact Information
--LinkedIn
+- LinkedIn
 
 ## Licence & Copyright:
 Copyright (c) 2026 Maureen Mutua. 
