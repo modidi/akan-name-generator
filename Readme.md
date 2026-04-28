@@ -18,7 +18,7 @@ Maureen Mutua
 **Output:** Akan Name based on day of birth and gender
 
 **Input:** Invalid date (day <1 or day >31 )
-**Output:** Error meesage requesting valid date
+**Output:** Error message requesting valid date
 
 **Input:** Invalid month (month <1 or month >12)
 **Output:** Error message requesting valid month
@@ -29,7 +29,7 @@ Maureen Mutua
 - JAVASCRIPT
 
 ## Contact Information
-- LinkedIn
+- Email me at : maureen@gmail.com
 
 ## Licence & Copyright:
 Copyright (c) 2026 Maureen Mutua. 
