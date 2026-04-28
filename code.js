@@ -4,9 +4,11 @@ document.getElementById("formAkan"). addEventListener("submit", function(e) {
 let day = parseInt(document.getElementById("day").value);
 let month = parseInt(document.getElementById("month").value);
 let year = parseInt(document.getElementById("year").value);
-let gender = parseInt(document.getElementById("gender").value);
+let gender = (document.getElementById("gender").value);
 
 let result = document.getElementById("result");
+
+console.log("Gender value:", gender);
 
 if (day < 1 || day > 31 ) {
     alert("Invalid day");
@@ -25,11 +27,13 @@ if (!gender) {
 
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 let CC = Math.floor(year / 100);
 let YY = year % 100;
-let MM = month;
 let DD = day;
+let MM = month;
+
 
 let dayofWeek = Math.floor(
     (((CC / 4) - (2 * CC) - 1) + ((5 * YY) / 4) + ((26 * (MM + 1)) / 10) + DD) % 7 
@@ -39,15 +43,20 @@ if (dayofWeek < 0) {
     dayofWeek = (dayofWeek + 7) % 7;
 }
 
-let akanName;
+let akanName = (gender === "male")
 
-if (gender === "male") {
-    akanName = maleNames[dayofWeek];
-} else {
-    akanName = femaleNames[dayofWeek];
-}
+? maleNames[dayofweek]
+: femaleNames[dayofWeek];
 
-result.textContent = "Your Akan name is: " +akanName;
+let dayName = days[dayofWeek];
+
+// if (gender === "male") {
+//     akanName = maleNames[dayofWeek];
+// } else {
+//     akanName = femaleNames[dayofWeek];
+// }
+
+result.textContent = 'You were born on ${dayName} - Your Akan Name is ${akanName}'
 });
 
 
